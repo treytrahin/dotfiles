@@ -1,3 +1,6 @@
+[user]
+    name = Sean Adkinson
+    email = sean.adkinson@gmail.com
 [alias]
 	c = commit -am
 	up = pull
