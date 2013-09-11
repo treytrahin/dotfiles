@@ -30,6 +30,7 @@ chmod +x ~/code/z/z.sh
 
 # z binary is already referenced from .bash_profile
 
+mkdir ~/code
 
 # https://github.com/dronir/SpotifyControl
 # Spotify Controll Script

@@ -1,3 +1,6 @@
+[user]
+    name = Trey Trahin
+    email = treytrahin@gmail.com
 [alias]
 	c = commit -am
 	up = pull
@@ -24,7 +27,8 @@
 	changed = green
 	untracked = cyan
 [merge]
-	log = true
+        log = true
+        tool = diffmerge
 [url "git@github.com:"]
 	insteadOf = "gh:"
 	pushInsteadOf = "github:"
@@ -37,8 +41,23 @@
 	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
+[branch]
+        autosetupmerge = always
 
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-[url "git@github.com:paulirish/"]
-  insteadOf = "git://github.com/paulirish/"
+[url "git@github.com:treytrahin/"]
+  insteadOf = "git://github.com/treytrahin/"
+[mergetool "diffmerge"]
+    cmd = ~/bin/diffmerge.sh --merge --result=$MERGED $LOCAL $BASE $REMOTE
+    trustExitCode = true
+[mergetool]
+    keepBackup = false
+[diff]
+    tool = diffmerge
+[difftool "diffmerge"]
+    cmd = ~/bin/diffmerge.sh $LOCAL $REMOTE
+[init]
+    templatedir = ~/.git_template
+[push]
+    default = current
