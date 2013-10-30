@@ -27,7 +27,8 @@
 	changed = green
 	untracked = cyan
 [merge]
-	log = true
+        log = true
+        tool = diffmerge
 [url "git@github.com:"]
 	insteadOf = "gh:"
 	pushInsteadOf = "github:"
