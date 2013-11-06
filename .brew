@@ -74,6 +74,7 @@ installcask sublime-text
 installcask the-unarchiver
 installcask tor-browser
 installcask transmission
+installcast tunnelblick
 installcask ukelele
 installcask virtualbox
 installcask vlc
