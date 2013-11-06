@@ -221,6 +221,9 @@ autocmd BufReadPost *
 set relativenumber " Use relative line numbers. Current line is still in status bar.
 au BufReadPost,BufNewFile * set relativenumber
 
+" Use absolute line number for the current line, instead of 0
+set number
+
 " Emulate bundles, allow plugins to live independantly. Easier to manage.
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
