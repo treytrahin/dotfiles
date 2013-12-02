@@ -1,6 +1,7 @@
 [user]
-    name = Trey Trahin
-    email = treytrahin@gmail.com
+        name = Trey Trahin
+        email = <>
+   # email = treytrahin@gmail.com
 [alias]
 	c = commit -am
 	up = pull
