@@ -46,6 +46,9 @@ brew install rhino
 brew install tree
 brew install webkit2png
 brew install zopfli
+brew install maven
+brew install ant
+brew install ivy
 
 brew tap homebrew/versions
 brew install lua52
@@ -59,26 +62,29 @@ function installcask() {
 }
 
 installcask diffmerge
-installcask dropbox
+#installcask dropbox
 installcask google-chrome
 installcask google-chrome-canary
 installcask imagealpha
 installcask imageoptim
 installcask iterm2
-installcask lime-chat
+#installcask lime-chat
 installcask macvim
 installcask miro-video-converter
-installcask spotify
-installcask sourcetree
-installcask sublime-text
+#installcask spotify
+#installcask sourcetree
+#installcask sublime-text
 installcask the-unarchiver
 installcask tor-browser
 installcask transmission
 installcast tunnelblick
-installcask ukelele
+#installcask ukelele
 installcask virtualbox
 installcask vlc
 installcask x-quartz
+installcask flux
+installcask adium
+installcask alfred
 
 # Remove outdated versions from the cellar
 brew cleanup
