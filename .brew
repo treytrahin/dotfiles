@@ -49,7 +49,7 @@ brew install zopfli
 brew install maven
 brew install ant
 brew install ivy
-
+brew install aria2 #Badass file downloading.
 brew tap homebrew/versions
 brew install lua52
 
