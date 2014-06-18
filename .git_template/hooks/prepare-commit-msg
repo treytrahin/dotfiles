@@ -1,0 +1,7 @@
+#!/bin/sh
+ 
+ #prepends te branch name to the commit message for any commit you make.
+ #goes in .git/hooks of any repo or in .../git-core/templates/hooks to put it in any new repo
+ branchname=$(git branch --no-color | grep ^* | sed 's/\* //g')
+ originalmessage=`cat $1`
+ echo "$branchname:  $originalmessage" > $1

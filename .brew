@@ -85,6 +85,7 @@ installcask x-quartz
 installcask flux
 installcask adium
 installcask alfred
+installcask evernote
 
 # Remove outdated versions from the cellar
 brew cleanup
