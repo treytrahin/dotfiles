@@ -1,6 +1,6 @@
 [user]
         name = Trey Trahin
-        email = <>
+        email = treytrahin@gmail.com 
    # email = treytrahin@gmail.com
 [alias]
 	c = commit -am
